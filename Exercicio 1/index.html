@@ -2,12 +2,37 @@
     <head>
         <meta charset="UTF-8">
         <title>Soma Valores</title>
+        <style>
+        .principal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .principal input{
+            height: 25px;
+        }
+        .principal button{
+            height: 25px;
+        }
+        .valorResultado{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+        </style>
     </head>
     <body>
-        <div>
+        <div class="principal">
             <input id="valor1" type="number" name="Valor 1" placeholder="Digite o primeiro valor">
             <input id="valor2" type="number" name="Valor 2" placeholder="Digite o segundo valor">
             <button id="soma">Somar</button>
+            <button id="subtrair">Subtrair</button>
+            <button id="multiplicar">Multiplicar</button>
+            <button id="dividir">Dividir</button>
+        </div>
+        <div class="valorResultado">
+            <p>O Resultado é: </p>
             <p id="resultado"></p>
         </div>
         <script src="app.js"></script>
