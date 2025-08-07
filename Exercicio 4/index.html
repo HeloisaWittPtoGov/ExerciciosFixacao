@@ -4,6 +4,8 @@
         <style>
           .riscado {
             text-decoration: line-through;
+            text-decoration-color:darkgreen ;
+            text-decoration-thickness: 3px;
           }  
           #area1 {
             justify-content: center;
@@ -11,14 +13,9 @@
           }
           #listaTarefas li{
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-          }
-          #listaTarefas li::before{
-            content:"-";
-            color: black;
-            font-size: 25px;
-            margin-right: 5px;
+            gap: 5px;
           }
         </style>
     </head>
@@ -26,6 +23,8 @@
         <div id="area1" >
             <input id="tarefa" type="text" name="tarefa" placeholder="Digite sua Tarefa" >
             <button id="adicionar">Adicionar</button> 
+            <button id="concluir"> Concluir</button>
+            <button id="remover">Remover</button>
             <ul id="listaTarefas"></ul>
         </div>
         <script src="app.js"></script>
