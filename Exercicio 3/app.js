@@ -25,10 +25,10 @@ function subtrair(){
 
 function verificaAviso(){
     if(valorAtual < -10 ){
-        aviso.innerHTML = "O valor é menor que 10"
+        aviso.innerHTML = "O valor é menor que 10."
     }
     else if(valorAtual > 10){
-        aviso.innerHTML = "O valor é maior que 10"
+        aviso.innerHTML = "O valor é maior que 10."
     }
     else{
         aviso.innerHTML = ""

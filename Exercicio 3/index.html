@@ -2,14 +2,31 @@
     <head>
         <title>Contador</title>
         <meta charset="UTF-8">
+        <style>
+        #principal {
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-size: 35px; 
+            gap: 15px;
+        } 
+        #aviso {
+             display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-size: 35px; 
+            color: orange;
+
+        }
+        </style>
     </head>
     <body>
-        <div id="principal" style="display: flex; justify-content: center; align-items: center; font-size: 35px; gap: 15px;" >
+        <div id="principal">
             <button id="menos">-</button>
             <p id="numero">0</p>
             <button id="mais">+</button>
-            <div id="aviso"></div>
         </div>
+            <div id="aviso"></div>
         <script src="app.js"></script>
     </body>
 </html>
