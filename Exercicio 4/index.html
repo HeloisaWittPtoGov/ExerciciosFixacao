@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>CheckList</title>
+        <style>
+          .riscado {
+            text-decoration: line-through;
+          }  
+          #area1 {
+            justify-content: center;
+            align-items: center;
+          }
+          #listaTarefas li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          #listaTarefas li::before{
+            content:"-";
+            color: black;
+            font-size: 25px;
+            margin-right: 5px;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="area1" >
+            <input id="tarefa" type="text" name="tarefa" placeholder="Digite sua Tarefa" >
+            <button id="adicionar">Adicionar</button> 
+            <ul id="listaTarefas"></ul>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
