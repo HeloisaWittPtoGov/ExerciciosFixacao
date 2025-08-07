@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Adivinhe o Numero</title>
+        <meta charset="UTF-8">
+        <style>
+            #principal {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #iniciar:hover {
+                background-color: lime;
+                border-radius: 25px;
+            }
+            #resultado p{
+                font-size: 25px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div id="principal">
+            <input id= palpite type="number" placeholder="Informe um numero" style="display: none;">
+            <button id="verificaTentativa" style="display: none; " >Verificar</button>
+            <button id="iniciar" style="font-size: 20px;">Iniciar</button>
+        </div>
+        <div id="resultado">
+            <p id="nTentativas"></p>
+            <p id="valorTentativa"> </p>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
